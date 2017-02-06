@@ -1,0 +1,9 @@
+{
+  "name": "colors-scalajs",
+  "version": "7.4.0",
+  "private": true,
+  "dependencies": {
+    "colors": "^1.1.2",
+    "source-map": "^0.5.6"
+  }
+}
