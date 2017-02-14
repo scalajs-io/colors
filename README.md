@@ -1,22 +1,24 @@
 Colors API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [Colors](https://www.npmjs.com/package/colors)
+[colors](https://www.npmjs.com/package/colors) - get colors in your node.js console.
 
-Get colors in your node.js console.
+### Description
 
-#### Build Requirements
+get color and style in your node.js console
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+### Build Requirements
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -30,9 +32,13 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
+import io.scalajs.nodejs.console
+import io.scalajs.npm.colors._
+import scala.scalajs.js
+
 console.log(Colors.green("hello"))                        // outputs green text
 console.log(Colors.red.underline("i like cake and pies")) // outputs red underlined text
 console.log(Colors.inverse("inverse the color"))          // inverses the color
@@ -66,12 +72,12 @@ console.log("this is an error" <<= "error")
 console.log("this is a warning" <<= "warn")   
 ```
    
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
-To add the Moment binding to your project, add the following to your build.sbt:  
+To add the `Colors` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "colors" % "0.3.0.3"
+libraryDependencies += "io.scalajs.npm" %%% "colors" % "1.1.2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
