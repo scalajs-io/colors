@@ -8,7 +8,6 @@ get color and style in your node.js console
 
 ### Build Requirements
 
-* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 
@@ -77,7 +76,7 @@ console.log("this is a warning" <<= "warn")
 To add the `Colors` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "colors" % "1.1.2"
+libraryDependencies += "io.scalajs.npm" %%% "colors" % "1.1.2-2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:

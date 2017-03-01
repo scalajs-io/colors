@@ -1,6 +1,6 @@
 {
   "name": "colors-sjs",
-  "version": "1.1.2",
+  "version": "1.1.2-2",
   "private": true,
   "dependencies": {
     "colors": "^1.1.2",
