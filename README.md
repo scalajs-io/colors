@@ -76,7 +76,7 @@ console.log("this is a warning" <<= "warn")
 To add the `Colors` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "colors" % "1.1.2-3"
+libraryDependencies += "io.scalajs.npm" %%% "colors" % "1.1.2-4"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
