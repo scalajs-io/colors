@@ -22,7 +22,7 @@ trait Colors extends js.Object {
 
   def styles: js.Dictionary[js.Array[js.Any]] = js.native
 
-  def supportsColor: Boolean = js.native
+  def supportsColor(): ColorSupport = js.native
 
   def themes: js.Dictionary[js.Object] = js.native
 
@@ -129,3 +129,20 @@ trait Colors extends js.Object {
 @js.native
 @JSImport("colors", JSImport.Namespace)
 object Colors extends Colors
+
+/**
+  * Colors Support
+  * @author lawrence.daniels@gmail.com
+  */
+@js.native
+trait ColorSupport extends js.Object {
+
+  def level: Int
+
+  def hasBasic: Boolean
+
+  def has256: Boolean
+
+  def has16m: Boolean
+
+}

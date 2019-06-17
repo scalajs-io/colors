@@ -1,5 +1,6 @@
 package io.scalajs.npm.colors
 
+import io.scalajs.JSON
 import io.scalajs.nodejs.console
 import org.scalatest.FunSpec
 
@@ -14,7 +15,7 @@ class ColorsTest extends FunSpec {
   describe("Colors") {
 
     it("should detect whether the console supports ANSI colors") {
-      info(s"supports color? ${Colors.supportsColor}")
+      info(s"supports color? ${JSON.stringify(Colors.supportsColor())}")
     }
 
     it("should indicate whether colors (module) is enabled") {
